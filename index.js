@@ -7,8 +7,8 @@ const pinoHttp = require('pino-http')
 const streamToElastic = pinoElastic({
   index: 'express-app',
   consistency: 'one',
-//   node: 'http://elasticsearch:9200',
-  node: 'http://localhost:9200',
+  node: 'http://elasticsearch:9200',
+  // node: 'http://localhost:9200',
   'es-version': 7,
   'flush-bytes': 1000
 })
